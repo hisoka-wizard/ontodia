@@ -162,6 +162,7 @@ export class PaperArea extends React.Component<Props, State> {
         const widgetProps: PaperWidgetProps = {paperArea: this, paperTransform};
         return (
             <div className={CLASS_NAME} ref={this.onOuterMount}>
+                <div className='ontodia-logo'/>
                 <div className={`${CLASS_NAME}__area${this.props.hideScrollBars ? ' ontodia-hide-scroll-bars' : ''}`}
                     ref={this.onAreaMount}
                     onMouseDown={this.onAreaPointerDown}

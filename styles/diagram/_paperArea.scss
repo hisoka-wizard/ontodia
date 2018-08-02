@@ -25,3 +25,15 @@
 .ontodia-paper {
   position: relative;
 }
+
+.ontodia-logo {
+  background-image: url('../images/ontodia-logo.svg');
+  background-size: cover;
+  width: 150px;
+  height: 58px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  opacity: 0.2;
+  pointer-events: none;
+}
