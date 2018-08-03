@@ -14,6 +14,8 @@ import { DiagramModel } from './model';
 import { DiagramView, RenderingLayer, WidgetDescription } from './view';
 import { Paper, PaperTransform } from './paper';
 
+const ONTODIA_WEBSITE = 'http://app.ontodia.org';
+
 export interface Props {
     view: DiagramView;
     zoomOptions?: ZoomOptions;
@@ -162,7 +164,7 @@ export class PaperArea extends React.Component<Props, State> {
         const widgetProps: PaperWidgetProps = {paperArea: this, paperTransform};
         return (
             <div className={CLASS_NAME} ref={this.onOuterMount}>
-                <div className='ontodia-logo'/>
+                <div className='ontodia-logo' onClick={() => window.open(ONTODIA_WEBSITE)}/>
                 <div className={`${CLASS_NAME}__area${this.props.hideScrollBars ? ' ontodia-hide-scroll-bars' : ''}`}
                     ref={this.onAreaMount}
                     onMouseDown={this.onAreaPointerDown}

@@ -35,5 +35,10 @@
   top: 25px;
   right: 25px;
   opacity: 0.2;
-  pointer-events: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.3;
+  }
 }

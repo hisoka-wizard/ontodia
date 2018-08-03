@@ -122,6 +122,7 @@ function addLogo(svg: SVGElement, viewBox: Rect) {
     const size = svg.getBoundingClientRect();
     const image = document.createElementNS(SVG_NAMESPACE, 'image');
     image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', ONTODIA_LOGO_SVG);
+    image.setAttribute('class', 'ontodia-logo');
 
     const imageRect: Rect = {
         x: viewBox.x + viewBox.width - IMAGE_PADDING - IMAGE_WIDTH,
